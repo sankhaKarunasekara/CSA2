@@ -148,6 +148,10 @@ public class Bowl {
 
     /**
      * @return the extraType
+     * byes =1
+     * legByes 2
+     * noballs 3
+     * wides 4
      */
     public int getExtraType() {
         return extraType;

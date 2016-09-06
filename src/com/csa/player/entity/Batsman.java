@@ -22,11 +22,84 @@ public class Batsman {
 	private Double battingStrikeRate;
 	private Double batmansDotBowlPresentage;
 	private Double battingEconomy;
+	private Double runRate;
+	private Double dotBowlToRunsRatio;
 	
 	private int totalNumberOfNotOuts;
 	private int totalNumberOfRuns;
+	
+	private int totalNumberOf1s;
+	private int totalNumberOf2s;
+	private int totalNumberOf4s;
+	private int totalNumberOf6s;
+	
+	
 	private int totalNumberOfOuts;
 	
+	public Double getBattingAverage() {
+		return battingAverage;
+	}
+
+	public void setBattingAverage(Double battingAverage) {
+		this.battingAverage = battingAverage;
+	}
+
+	public Double getBattingStrikeRate() {
+		return battingStrikeRate;
+	}
+
+	public void setBattingStrikeRate(Double battingStrikeRate) {
+		this.battingStrikeRate = battingStrikeRate;
+	}
+
+	public Double getBatmansDotBowlPresentage() {
+		return batmansDotBowlPresentage;
+	}
+
+	public void setBatmansDotBowlPresentage(Double batmansDotBowlPresentage) {
+		this.batmansDotBowlPresentage = batmansDotBowlPresentage;
+	}
+
+	public Double getBattingEconomy() {
+		return battingEconomy;
+	}
+
+	public void setBattingEconomy(Double battingEconomy) {
+		this.battingEconomy = battingEconomy;
+	}
+
+	public int getTotalNumberOf1s() {
+		return totalNumberOf1s;
+	}
+
+	public void setTotalNumberOf1s(int totalNumberOf1s) {
+		this.totalNumberOf1s = totalNumberOf1s;
+	}
+
+	public int getTotalNumberOf2s() {
+		return totalNumberOf2s;
+	}
+
+	public void setTotalNumberOf2s(int totalNumberOf2s) {
+		this.totalNumberOf2s = totalNumberOf2s;
+	}
+
+	public int getTotalNumberOf4s() {
+		return totalNumberOf4s;
+	}
+
+	public void setTotalNumberOf4s(int totalNumberOf4s) {
+		this.totalNumberOf4s = totalNumberOf4s;
+	}
+
+	public int getTotalNumberOf6s() {
+		return totalNumberOf6s;
+	}
+
+	public void setTotalNumberOf6s(int totalNumberOf6s) {
+		this.totalNumberOf6s = totalNumberOf6s;
+	}
+
 	private int totalNumberOfBowls;
 	private int totalNumberOfDotBowls;
 	
@@ -237,7 +310,21 @@ public class Batsman {
 		this.totalNumberOfOuts = totalNumberOfOuts;
 	}
 
-	
+	public Double getRunRate() {
+		return runRate;
+	}
+
+	public void setRunRate(Double runRate) {
+		this.runRate = runRate;
+	}
+
+	public Double getDotBowlToRunsRatio() {
+		return dotBowlToRunsRatio;
+	}
+
+	public void setDotBowlToRunsRatio(Double dotBowlToRunsRatio) {
+		this.dotBowlToRunsRatio = dotBowlToRunsRatio;
+	}
 
 //	public int getNumberOfBowlsBowled() {
 //		return numberOfBowlsBowled;

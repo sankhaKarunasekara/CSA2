@@ -58,14 +58,14 @@ public class BatsmanUtil {
 		return bowlList;
 	}
 
-	// get experience bowler
+	// get experience batsman
 	public static Batsman getOldBatsman(Session session, String batsman) {
 
 		// change this function
 		session.beginTransaction();
 		// get the bowler if bowler played in previous matches
 		Query query = session
-				.createQuery("select max(b.playerId) from Bowler b where b.name = '"
+				.createQuery("select max(b.playerId) from Batsman b where b.name = '"
 						+ batsman + "'");
 		Batsman oldBatsman = new Batsman();
 		if (query.list().get(0) != null) {

@@ -14,6 +14,8 @@ public class CombineExperianceBowler {
 	// total Number of matches played by top 5 bowlers
 	int dffnoOfMatches;
 
+	Double diffBowlingEconomy;
+	
 	// bowling average of top 5 bowlers
 	Double diffAvgAvgOfBowlers;
 
@@ -28,6 +30,14 @@ public class CombineExperianceBowler {
 
 	// if 1 firstBowlTeam win if 2 second Bowl Team win
 	int win;
+
+	public Double getDiffBowlingEconomy() {
+		return diffBowlingEconomy;
+	}
+
+	public void setDiffBowlingEconomy(Double diffBowlingEconomy) {
+		this.diffBowlingEconomy = diffBowlingEconomy;
+	}
 
 	public int getDffnoOfMatches() {
 		return dffnoOfMatches;

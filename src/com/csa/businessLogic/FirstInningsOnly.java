@@ -232,7 +232,7 @@ public class FirstInningsOnly {
 						System.out.println();
 						PlayerProfile player = new PlayerProfile();
 
-						newBowler = player.getKeyParams(oldBowler,
+						newBowler = player.getKeyParamsBowler(oldBowler,
 								match.getFirstInnings());
 						newBowler.setName(bowlersName);
 						newBowler.setInningsNumber(1);

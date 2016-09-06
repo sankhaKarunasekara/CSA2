@@ -326,7 +326,7 @@ public class second2OnlyMain {
 						System.out.println();
 						PlayerProfile player = new PlayerProfile();
 
-						newBowler = player.getKeyParams(oldBowler,
+						newBowler = player.getKeyParamsBowler(oldBowler,
 								match.getSecondInnings());
 						newBowler.setName(bowlersName);
 

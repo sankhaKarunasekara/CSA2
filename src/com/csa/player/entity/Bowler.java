@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Bowler {
+public class Bowler implements Comparable<Bowler> {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -241,6 +241,17 @@ public class Bowler {
 
 	public void setAverageRunsInInnings(Double averageRunsInInnings) {
 		this.averageRunsInInnings = averageRunsInInnings;
+	}
+
+	
+	//this method is to compare bowler with other bowler and find out who is better
+	// Base Factor: average of the bowler ( other factors are unfair to debut bowler) 
+	@Override
+	public int compareTo(Bowler compareBowler) {
+		// TODO Auto-generated method stub
+		Double compareAverage = ((Bowler)compareBowler).getBowlingAverage();
+		
+		return (int)Math.round(this.bowlingAverage -compareAverage);
 	}
 
 	
