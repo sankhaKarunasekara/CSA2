@@ -1,10 +1,21 @@
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 /*
 *@sanjaya
 *
 *extract playingXI from espncricinfo page
 *
 */
+
+// ==UserScript==
+// @name        ipl2016
+// @namespace   csa
+// @include     http://www.espncricinfo.com/indian-premier-league-2016/engine/match/*
+// @require 	http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+// @version     1
+// ==/UserScript==
+
+
+$(document).ready(function(){
 
 
 //1st innings
@@ -14,7 +25,6 @@ var len=batting1.children[0].children.length;
 var battedInfo=batting1.children[0].children;
 var team1= [];
 var j=0;
-
 //batted 1st inning
 for(i=0;i<len;i++){
 	
@@ -32,7 +42,6 @@ var len=batting2.children[0].children.length;
 var battedInfo=batting2.children[0].children;
 var team2= [];
 var k=0;
-
 //batted 2nd inning
 for(i=0;i<len;i++){
 	
@@ -86,3 +95,13 @@ $.post(url+'/save.php',postData,function(data){
 	
 	alert("Sent");
 });
+
+
+
+
+
+
+
+
+
+})
